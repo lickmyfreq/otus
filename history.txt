@@ -1,0 +1,59 @@
+    1  cd /usr/src/
+    2  wget https://git.kernel.org/torvalds/t/linux-5.3-rc1.tar.gz
+    3  yum install wget
+    4  wget https://git.kernel.org/torvalds/t/linux-5.3-rc1.tar.gz
+    5  wget https://git.kernel.org/torvalds/t/linux-5.3-rc1.tar.gz
+    6  tar xzvpf linux-5.3-rc1.tar.gz
+    7  tar xzvpf linux-5.3-rc1.tar.gz
+    8  ll
+    9  rm -rf linux-5.3-rc1.tar.gz
+   10  ll
+   11  rm -rf linux-5.3-rc1
+   12  tar xzvpf linux-5.3-rc1.tar.gz.1 
+   13  rm -rf linux-5.3-rc1.tar.gz.1 
+   14  ln -s linux-5.3-rc1/ linux
+   15  cd linux
+   16  cp /boot/config-3.10.0-957.12.2.el7.x86_64 .config
+   17  make oldconfig
+   18  yum install gcc
+   19  make oldconfig
+   20  yum install flex
+   21  make oldconfig
+   22  yum install bison -y
+   23  make oldconfig
+   24  make && make modules
+   25  yum install openssl-devel.x86_64 
+   26  make && make modules
+   27  yum install bc -y
+   28  make && make modules
+   29  yum install -y elfutils-libelf-devel.x86_64 
+   30  make && make modules
+   31  yum install perl
+   32  make && make modules
+   33  sudo make install && sudo make modules_install
+   34  grub2-mkconfig -o /boot/grub2/grub.cfg 
+   35  vim /etc/default/grub 
+   36  yum install vim
+   37  vi /etc/default/grub 
+   38  cat /boot/grub2/grub.cfg | grep menuenrty
+   39  cat /boot/grub2/grub.cfg | grep menuentry
+   40  reboot
+   41  grub2-set-default 0
+   42  reboot
+   43  cd /usr/src/linux
+   44  make install
+   45  ip a
+   46  make && make modules
+   47  make install
+   48  make modules_install
+   49  grub2-mkconfig -o /boot/grub2/grub.cfg 
+   50  exit
+   51  ll
+   52  pwd
+   53  cd /root/
+   54  ll
+   55  cd /home/vagrant/
+   56  ll
+   57  mkdir git
+   58  cd git/
+   59  history > history.txt
